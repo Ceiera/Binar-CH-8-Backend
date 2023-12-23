@@ -1,7 +1,13 @@
 
-# Binar Challenge 6
+# Binar Challenge 8
 
-Challenge 6 Binar is an Creating Example Backend for Cars Rental using Express JS, Knex JS as ORM, POSTGRESQL as Database, and Cloudinary as Storage
+Challenge 8 Binar is an Creating Example Backend for Cars Rental using Express JS, Knex JS as ORM, POSTGRESQL as Database, and Cloudinary as Storage
+AND
+Adding Deployment configurations using dockerfile
+
+## PUBLIC
+[Link Deployment](https://binar-ch-8-backend-production.up.railway.app/)
+[Link DockerImage](https://hub.docker.com/r/juruloss/binarch8)
 
 ## Entity Relationship Diagram
 ![image](https://images2.imgbox.com/19/69/sXag3Sx8_o.png)
