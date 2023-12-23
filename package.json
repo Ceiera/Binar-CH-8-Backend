@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "binar-ch8-backend",
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "MIT",
@@ -53,6 +53,5 @@
     "migrate:rollback:all": "knex migrate:rollback --all",
     "seed": "knex seed:run --knexfile ./knexfile.ts",
     "test": "jest --watchAll --detectOpenHandles --maxWorkers=1"
-  },
-  "type": "module"
+  }
 }

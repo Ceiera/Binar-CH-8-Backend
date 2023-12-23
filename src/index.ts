@@ -1,4 +1,4 @@
-import express, { Application } from "express";
+import express, { Application, Request, Response } from "express";
 import "dotenv/config";
 import CarsRouter from "./routes/cars";
 import AuthRouter from "./routes/auth";
@@ -13,11 +13,17 @@ app.use(express.json());
 app.use(AuthRouter);
 app.use(CarsRouter);
 app.use(UserRouter);
+app.get("/", (req:Request, res:Response) => {
+    res.status(200).send({
+        status: "OK",
+        message: "Halo Nama Saya Ikhroma",
+    })
+})
 
 // const listen = app.listen(port, () => {
 //   console.log(`Listening on port: ${port}`);
 // });
 const server = app.listen(port, () => {
-    console.log(`Listening on port: ${port}`);
-})
-export default server
+  console.log(`Listening on port: ${port}`);
+});
+export default server;
